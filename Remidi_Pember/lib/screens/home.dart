@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'input_data.dart';
-import '../models/remidi.dart'; // Pastikan ini sesuai path
+import '../models/remidi.dart'; 
 
 class HomePage extends StatefulWidget {
   @override
