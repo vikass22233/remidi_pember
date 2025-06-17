@@ -17,7 +17,7 @@ class Remidi {
 
   factory Remidi.fromJson(Map<String, dynamic> json) {
     return Remidi(
-      id: json['id'] ?? '', // key dari Firebase diset manual saat parsing
+      id: json['id'] ?? '', 
       deskripsi: json['deskripsi'] ?? '',
       jenis: json['jenis'] ?? '',
       judul: json['judul'] ?? '',
