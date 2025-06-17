@@ -16,7 +16,6 @@ class _HomePageState extends State<HomePage> {
       MaterialPageRoute(builder: (context) => TambahDataPage()),
     );
 
-    // Pastikan yang dikembalikan adalah objek Remidi
     if (result != null && result is Remidi) {
       setState(() {
         transaksiList.add(result);

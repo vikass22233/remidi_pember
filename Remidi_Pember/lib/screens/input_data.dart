@@ -112,13 +112,13 @@ class _TambahDataPageState extends State<TambahDataPage> {
       }
 
       final remidi = Remidi(
-        id: '', // ID bisa di-generate oleh backend
+        id: '', 
         judul: _judulController.text,
         jenis: selectedJenis,
         tanggal: selectedDate!.toIso8601String(),
         jumlah: int.tryParse(_jumlahController.text) ?? 0,
         deskripsi: _deskripsiController.text,
-        // Tambahkan field image jika model mendukung
+
       );
 
       try {
@@ -126,7 +126,7 @@ class _TambahDataPageState extends State<TambahDataPage> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Data berhasil disimpan')),
         );
-        Navigator.pop(context, remidi); // kirim data kembali ke HomePage
+        Navigator.pop(context, remidi); 
       } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Gagal menyimpan data: $e')),
